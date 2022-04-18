@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+    
+</head>
+<body>
+    <div class="nav">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Ksense</a></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="users.html">User List</a></li>
+                </ul>
+            
+          </nav>
+    </div>
+    <div class="container">
+
+        <div id="user-list">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>User name</th>
+                    <th>email</th>
+                    <th>address</th>
+                    <th>Phone</th>
+                    <th>Website</th>
+                    <th>Company</th>
+                </tr>   
+                <tbody id="table-data"></tbody>>    
+
+            </table>
+        </div>
+
+        <div class="user-post" id="post-modal">
+            <div class="post-header">
+                <div class="user-info">
+                    <div class="user-avater">
+                        <img src="assets/images/m-avatar2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <span id="user-info-name"> </span>
+                        <span id="user-info-email"></span>
+                    </div>
+                    
+                </div>
+                <div class="close-icon" id="close-icon"></div>
+            </div>
+            <div class="post" id="posts"></div>
+            
+        </div>
+    </div>
+    
+    <script src='assets/js/postModalControl.js'></script>
+    <script src='assets/js/userData.js'></script>
+</body>
+</html>
