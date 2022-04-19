@@ -150,9 +150,6 @@ table, th, td {
 table {
     width: 100%;
 }
-table tr:root{
-    border-radius: 50px;
-}
 
 #user-list th {
     padding: 15px;
@@ -160,6 +157,7 @@ table tr:root{
     background-color: #171410;
     color: #fff;
 }
+
 
 #user-list td {
     padding: 10px;
@@ -177,6 +175,10 @@ table tr:root{
 #user-list tr:nth-child(odd) {
     background-color: #fff;
     color: #333;
+}
+#user-list tr:hover {
+    background-color: rgba(90, 90, 90, 0.85);
+    color: #fcd569;
 }
 
 /* User Post style */
@@ -208,8 +210,8 @@ table tr:root{
     position: relative;
     border: 1px solid #777;
     border-radius: 100%;
-    right: 32px;
-    top: 0px;
+    right: 0px;
+    top: 8px;
     width: 32px;
     height: 32px;
     opacity: 0.3;
