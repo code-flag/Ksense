@@ -27,7 +27,7 @@ body {
     background-color: var(--page-background-light-color);
     color: var(--page-dark-color);
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 a {
     text-decoration: none;
@@ -148,7 +148,8 @@ table, th, td {
     border-collapse: collapse;
 }
 table {
-    width: 100%;
+    width: 95vw;
+    overflow-x: auto;
 }
 
 #user-list th {
