@@ -163,9 +163,9 @@ table {
 #user-list td {
     padding: 10px;
     text-align: left;
+    cursor: pointer;
 }
 #user-list td:nth-child(1):hover {
-    cursor: pointer;
     background-color: #2d3c3c;
     color: #f1b900;
 }

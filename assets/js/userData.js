@@ -73,9 +73,9 @@ async function displayUserListInTable() {
     // create element to set each user data in each row
     let tr = document.createElement("tr");
     tr.id = data.id;
-    let td = `<td onclick="showUserPosts(${data.id})">${data.name}</td> <td>${
+    let td = `<td onclick="showUserPosts(${data.id})">${data.name}</td> <td onclick="showUserPosts(${data.id})">${
       data.username
-    }</td><td>${data.email}</td> <td>${
+    }</td><td onclick="showUserPosts(${data.id})">${data.email}</td> <td onclick="showUserPosts(${data.id})">${
       data.address.street +
       " " +
       data.address.suite +
@@ -87,7 +87,7 @@ async function displayUserListInTable() {
       data.address.geo.lng +
       " " +
       data.address.geo.lat
-    }</td><td>${data.phone}</td> <td>${data.website}</td> <td>${
+    }</td><td onclick="showUserPosts(${data.id})">${data.phone}</td> <td onclick="showUserPosts(${data.id})">${data.website}</td> <td>${
       data.company.name
     }</td> `;
     
