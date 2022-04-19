@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 :root{
     --page-background-light-color: #fff;
     --page-background-dark-color: #555;
@@ -24,6 +26,8 @@ body {
     font-family: var(--app-font-family);
     background-color: var(--page-background-light-color);
     color: var(--page-dark-color);
+    margin: 0;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -35,9 +39,8 @@ a {
     height: 100vh;
     background: url('../images/bg.gif');
     background-size: 100% 100%;
-    background-repeat: no-repeat;
     /* object-fit: fill; */
-    overflow-x: hidden;
+   
 }
 .logo > a{
     font-size: var(--app-bigger-font);
@@ -45,17 +48,19 @@ a {
 }
 .navbar {
     width: 90vw;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    background-color: #050505;
+    color: rgb(255, 255, 255);
     padding-left: 100px;
     padding-right: 100px;
-    z-index: 2;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #d67c04;
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 40px;
@@ -76,12 +81,17 @@ a {
     text-align: center;
 
 }
+.navbar ul .active-nav{
+  color: #f19900;
+  font-weight: bold;
+
+}
 .navbar ul li a{
-    color: #333333;
+    color: inherit;
 }
 
 .navbar ul li:hover {
-    border-bottom: 2px solid #fcac00;
+    border-bottom: 4px solid #fcac00;
 }
 .navbar ul li:hover  > a{
     color: #ffaa00;
@@ -127,6 +137,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 #user-list {
     display: block;
@@ -146,7 +157,7 @@ table tr:root{
 #user-list th {
     padding: 15px;
     text-align: center;
-    background-color: #2d3c3c;
+    background-color: #171410;
     color: #fff;
 }
 
@@ -160,7 +171,7 @@ table tr:root{
     color: #f1b900;
 }
 #user-list tr:nth-child(even) {
-    background-color: #f3f3f3;
+    background-color: #e9dac1;
     color: #333;
 }
 #user-list tr:nth-child(odd) {
